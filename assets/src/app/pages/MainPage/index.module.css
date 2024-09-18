@@ -1,0 +1,48 @@
+.root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #241b2f;
+}
+
+.header {
+    width: 100%;
+    font-size: 1rem;
+    padding: 6px 12px;
+    background-color: #b4b4b4;
+    color: #000;
+    border-bottom: 2px ridge #7d7d7d;
+    font-weight: 600;
+
+    & > button {
+        font-weight: 600;
+        font-family: 'Courier New', monospace;
+    }
+}
+
+.window {
+    width: fit-content;
+    height: fit-content;
+    max-width: 90vw;
+    margin: auto;
+    background-color: #c0c0c0;
+    border: 2px ridge #7d7d7d;
+}
+
+.content {
+    padding: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 420px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
